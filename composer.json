@@ -1,0 +1,26 @@
+{
+    "name": "lswl/laravel-database",
+    "description": "Laravel database.",
+    "keywords": [
+        "lswl",
+        "laravel",
+        "database"
+    ],
+    "homepage": "https://linshaowl.com/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "linshaowl",
+            "email": "linshaowl@163.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Lswl\\Database\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.3|^8.0",
+        "lswl/laravel-support": "^8.0"
+    }
+}
