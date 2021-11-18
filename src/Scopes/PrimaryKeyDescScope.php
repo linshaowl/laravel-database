@@ -30,6 +30,6 @@ class PrimaryKeyDescScope implements Scope
      */
     public function apply(Builder $builder, Model $model)
     {
-        $builder->orderByDesc($model->getKeyName());
+        $builder->orderByDesc($model->getQualifiedColumn($model->getKeyName()));
     }
 }

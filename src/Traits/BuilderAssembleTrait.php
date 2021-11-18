@@ -35,7 +35,7 @@ trait BuilderAssembleTrait
             }
 
             // 排序
-            $builder->orderBy($params['sort'], $direction);
+            $builder->orderBy($builder->getModel()->getQualifiedColumn($params['sort']), $direction);
         }
     }
 
