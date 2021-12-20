@@ -74,7 +74,7 @@ trait DatabaseTrait
      */
     public function newEloquentBuilder($query)
     {
-        return $this->builder = new Builder($query);
+        return $this->builder = parent::newEloquentBuilder($query);
     }
 
     /**
